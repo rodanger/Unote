@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 3001;
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
@@ -16,6 +16,7 @@ app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}. Welcome!`);
-});
+  });
 
-console.log("RUnniNG on http://127.0.0.1:8001")
+
+console.log("running on http://127.0.0.1:3001")
